@@ -4,6 +4,9 @@
       Delivery tracker
     </h1>
   </div>
+  <div>
+    <p>Know if something gets lost in the mail.</p>
+  </div>
 </div>
 
 <hr>
@@ -11,29 +14,19 @@
 <div>
   <div>
     <h2>
-      Add a new delivery
+      Expecting a package?
     </h2>
 
     <form action="/insert_delivery" method="post">
       <div>
-        <label for="user_id_box">
-          User
-        </label>
-
-        <input type="text" id="user_id_box" name="query_user_id">
-      </div>
-
-      <div>
         <label for="description_box">
           Description
         </label>
-
-        <input type="text" id="description_box" name="query_description">
       </div>
 
       <div>
         <label for="supposed_to_arrived_on_box">
-          Supposed to arrived on
+          Supposed to arrive on
         </label>
 
         <input type="date" id="supposed_to_arrived_on_box" name="query_supposed_to_arrived_on">
@@ -48,7 +41,7 @@
       </div>
 
       <button>
-        Create delivery
+        Log delivery
       </button>
     </form>
   </div>
