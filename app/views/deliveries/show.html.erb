@@ -34,6 +34,13 @@
       </dd>
 
       <dt>
+        Details
+      </dt>
+      <dd>
+        <%= @the_delivery.details %>
+      </dd>
+
+      <dt>
         Supposed to arrived on
       </dt>
       <dd>
@@ -41,10 +48,10 @@
       </dd>
 
       <dt>
-        Details
+        Arrived
       </dt>
       <dd>
-        <%= @the_delivery.details %>
+        <%= @the_delivery.arrived %>
       </dd>
 
       <dt>
@@ -91,6 +98,14 @@
       </div>
 
       <div>
+        <label for="details_box">
+          Details
+        </label>
+
+        <input type="text" id="details_box" name="query_details" value="<%= @the_delivery.details %>">
+      </div>
+
+      <div>
         <label for="supposed_to_arrived_on_box">
           Supposed to arrived on
         </label>
@@ -99,11 +114,11 @@
       </div>
 
       <div>
-        <label for="details_box">
-          Details
-        </label>
+        <input type="checkbox" id="arrived_box" name="query_arrived" value="1" <%= "checked" if @the_delivery.arrived %>>
 
-        <textarea id="details_box" name="query_details"><%= @the_delivery.details %></textarea>
+        <label for="arrived_box">
+            Arrived
+        </label>
       </div>
 
       <button>
